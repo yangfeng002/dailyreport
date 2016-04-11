@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*日报系统导航部分采用白色字体，折叠的样式也为白色的*/
+body {
+  font-size: 12px;
+  font-family: "Microsoft YaHei", Arial, "Times New Roman", SimHei;
+  margin: 0; }
+
+/*首页部分样式 common.scss 日志系统的风格*/
+.wrapper .navbar-default {
+  background: url(../img/navbar-bg.png); }
+  .wrapper .navbar-default .navbar-brand {
+    color: #fff; }
+  .wrapper .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    /*字体*/ }
+  .wrapper .navbar-default .navbar-toggle .icon-bar {
+    /*折叠部分颜色*/
+    background-color: #fff; }
+  .wrapper .navbar-default .navbar-toggle {
+    border-color: #fff; }
+    .wrapper .navbar-default .navbar-toggle:focus, .wrapper .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+  .wrapper .navbar-default .navbar-collapse, .wrapper .navbar-default .navbar-form {
+    border-color: rgba(216, 196, 196, 0.07); }
+
+/*自定义样式风格*/
+/*框架默认外边距偏移15px*/
+/*定义居中样式*/
+@media screen and (min-width: 500px) {
+  .login-box {
+    left: 50%;
+    /*设置负值，为要定位子盒子的一半宽度*/
+    margin-left: -250px; } }
+/*登录样式设置*/
+.login-box {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  margin-top: 150px;
+  /*设置负值，为要定位子盒子的一半高度*/ }
+  .login-box .login-title {
+    text-align: center;
+    color: #fff;
+    background-color: #2887BF;
+    padding: 20px 10px;
+    position: relative;
+    top: -20px; }
+    .login-box .login-title small {
+      color: #fff; }
+
+/*登录的表单居中布局*/
+.login-form {
+  width: 100%;
+  max-width: 500px;
+  height: 275px; }
+
+/*输入框部分样式*/
+.form-group {
+  margin-bottom: 0px !important;
+  font-size: 14px;
+  padding-bottom: 10px; }
+  .form-group .user-icon, .form-group .pwd-icon {
+    top: 30px;
+    left: 5px; }
+  .form-group input {
+    padding: 7px 12px 7px 25px;
+    height: 36px; }
+  .form-group .tips {
+    color: #E02D2D;
+    text-align: center; }
+  .form-group .link p {
+    line-height: 20px;
+    margin-top: 30px; }
+  .form-group .btn {
+    height: 40px; }
+
+/*导航树样式*/
+.wrapper .container-fluid #tree {
+  padding: 0; }
+.wrapper .mainContent {
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

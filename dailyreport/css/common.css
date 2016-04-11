@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*日报系统导航部分采用白色字体，折叠的样式也为白色的*/
+body {
+  font-size: 12px;
+  font-family: "Microsoft YaHei", Arial, "Times New Roman", SimHei;
+  margin: 0; }
+
+/*首页部分样式 common.scss 日志系统的风格*/
+.wrapper .navbar-default {
+  background: url(../img/navbar-bg.png); }
+  .wrapper .navbar-default .navbar-brand {
+    color: #fff; }
+  .wrapper .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    /*字体*/ }
+  .wrapper .navbar-default .navbar-toggle .icon-bar {
+    /*折叠部分颜色*/
+    background-color: #fff; }
+  .wrapper .navbar-default .navbar-toggle {
+    border-color: #fff; }
+    .wrapper .navbar-default .navbar-toggle:focus, .wrapper .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+  .wrapper .navbar-default .navbar-collapse, .wrapper .navbar-default .navbar-form {
+    border-color: rgba(216, 196, 196, 0.07); }
+
+/*# sourceMappingURL=common.css.map */

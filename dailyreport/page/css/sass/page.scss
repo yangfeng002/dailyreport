@@ -1,0 +1,27 @@
+/*每个页面单独定义的css*/
+.wrapper {
+       
+    //查询日报
+    .searchPage {
+      .area{border: 1px solid #ccc;
+          margin-top: 5px;
+          padding-bottom: 20px;
+      }
+          /*表单样式*/
+     .searchDailyForm{
+         position: relative;
+         .form-group{position: relative;
+               .date-icon{
+               //图标
+               position: absolute;
+                top: 9px;
+                right: 10px;
+                cursor: pointer;  
+               }  
+            }
+            
+        }
+        
+    }
+         
+}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+$fontSize:12px !default;
+$fontFamily:'Microsoft YaHei',Arial,'Times New Roman',SimHei;
+$imageUrl:images;
+$login:login;
+$navbar-color:#fff;/*日报系统导航部分采用白色字体，折叠的样式也为白色的*/
+body{font-size:$fontSize;font-family:$fontFamily;margin:0;}
+/*首页部分样式 common.scss 日志系统的风格*/
+.wrapper{
+    .navbar-default{
+       background:url(../img/navbar-bg.png);
+          .navbar-brand{color:$navbar-color;}
+          .navbar-nav>li>a{color: $navbar-color;/*字体*/}      
+          .navbar-toggle .icon-bar{
+            /*折叠部分颜色*/
+           background-color: $navbar-color;
+          }
+          .navbar-toggle {
+            border-color: $navbar-color;
+            &:focus,&:hover{background-color:transparent;}
+          }
+          .navbar-collapse, .navbar-form {
+            border-color: rgba(216, 196, 196, 0.07);
+           }
+      
+     }
+    
+}

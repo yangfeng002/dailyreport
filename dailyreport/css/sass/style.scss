@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import 'common';
+
+/*自定义样式风格*/
+$font-login-size:22px;
+$marginValue:15px;/*框架默认外边距偏移15px*/
+//方向定义数组
+$direction:top right bottom left;
+$login-color:#fff;
+/*定义居中样式*/
+@media screen and (min-width:500px){
+  .login-box {
+    left: 50%;
+    /*设置负值，为要定位子盒子的一半宽度*/
+    margin-left: -250px;
+  }
+} 
+
+/*登录样式设置*/
+.login-box{
+  background:$login-color;
+  width: 100%;
+  max-width:500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  margin-top: 150px;
+  /*设置负值，为要定位子盒子的一半高度*/
+  .login-title{
+     text-align:center;
+     color:$login-color;
+     background-color: #2887BF;
+     padding:20px 10px;
+     position: relative;
+     top: -20px;
+     small {
+        color: $login-color;
+      }
+   }
+
+}
+
+
+/*登录的表单居中布局*/
+.login-form{
+  width: 100%;
+  max-width:500px;
+  height: 275px;
+} 
+
+/*输入框部分样式*/
+.form-group {
+  margin-bottom: 0px !important;
+  font-size:14px;
+  padding-bottom:10px;
+  .user-icon,.pwd-icon{
+      top: 30px;
+      left: 5px;
+  }
+  
+   input{    
+       padding: 7px 12px 7px 25px;
+       height: 36px;
+       }
+   .tips{    
+       color: #E02D2D;
+       text-align: center;
+      }
+    .link p {
+      line-height: 20px;
+      margin-top: 30px;
+    }
+   .btn{height:40px;}
+}
+
+/*导航树样式*/
+.wrapper {
+    .container-fluid #tree{
+         padding:0;}
+     .mainContent{padding:0}   
+         
+}
+    
+
+

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*每个页面单独定义的css*/
+.wrapper .searchPage {
+  /*表单样式*/ }
+  .wrapper .searchPage .area {
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    padding-bottom: 20px; }
+  .wrapper .searchPage .searchDailyForm {
+    position: relative; }
+    .wrapper .searchPage .searchDailyForm .form-group {
+      position: relative; }
+      .wrapper .searchPage .searchDailyForm .form-group .date-icon {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        cursor: pointer; }
+
+/*# sourceMappingURL=page.css.map */

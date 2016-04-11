@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--兼容模式下支持IE最高版本 -->  
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>登录页</title>
+	    <!--logo图标-->
+	    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"/>       
+         <!-- common.css为通用的css样式,建议不要修改 -->
+        <link rel="stylesheet" href="css/common.css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" media="screen"/>
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    <style type="text/css">
+	      body{background:#9FE4F7 url(img/login/login-bg.png) repeat -192px -155px;position: relative;}
+	    </style>
+    </head>
+    <body>
+    	 <div class="container">
+		<div class="row ">
+		    <div class="col-md-7 col-xs-7  col-md-offset-2 login-box">
+		    <!-- 输入框部分 -->	    
+	                 <form role="form" class="form-horizontal login-form" action="page/index.html">
+	                   <div class="form-group">
+	                   <!-- 错误提示内容 -->
+	                    <h3><label  class="col-md-12 col-xs-12 login-title" style="">经分日报管理系统</label></h3>
+					   </div>
+	                   <div class="form-group">
+	                   <!-- 错误提示内容 -->
+	                    <label  class="col-md-12 col-xs-12 tips" style="">&nbsp;</label>
+					   </div>
+	                 <!-- 用户名 -->
+	                    <div class="form-group">
+						    <label for="password" class="col-md-3 col-xs-4 control-label" ></label>
+						    <div class="col-md-7 col-xs-7">
+						    	<span class="glyphicon glyphicon-user user-icon"></span>
+						    	<input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名"/>
+						    </div>
+					    </div>
+					    <!-- 密码 -->
+					    <div class="form-group">
+						   <label for="password" class="col-md-3 col-xs-4 control-label" ></label>
+						   <div class="col-md-7 col-xs-7">
+						   	<span class="glyphicon glyphicon-lock pwd-icon"></span>
+						   	<input type="password" name="password" class="form-control" id="password" placeholder="请输入密码"/></div>
+					    </div>
+					    <div class="form-group">
+					        <label class="col-md-3 col-xs-4 control-label" ></label>
+						    <div class="col-md-7 col-xs-7">
+						      <button type="button" class="btn btn-info btn-block">登录</button>
+						    </div>
+						</div>	
+						<div class="form-group">
+							<div class="col-xs-6 link">
+								<p class="text-right remove-margin"><small>忘记密码？</small> <a href="javascript:void(0)" ><small>找回</small></a>
+								</p>
+							</div>
+							<div class="col-xs-6 link">
+								<p class="text-left remove-margin"><small>还没注册?</small> <a href="javascript:void(0)" ><small>注册</small></a>
+								</p>
+							</div>
+						</div>
+	                </form>
+               
+		    </div>
+		</div>
+	
+	 </div>
+    <!--必须先引入jquery,再引入其他的js文件-->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap3.3.5.min.js"></script>
+		<script type="text/javascript" src="js/login/login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--兼容模式下支持IE最高版本 -->  
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>新增日报</title>
+	    <!--logo图标-->
+	    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen"/>
+        <link rel="stylesheet" href="../js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" media="screen"/>
+        <link rel="stylesheet" href="css/common.css" media="screen"/>
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+	</head>
+	<body>		
+		<div class="container-fluid">
+			<div class="row">
+			  <div class="col-md-6 col-md-offset-3">
+			  	<form class="form-horizontal" role="form" id="addDailyform" action="">
+			          <h3>添加日报</h3>
+						  <div class="form-group">
+							<label for="dailyTitle" class="col-sm-2 control-label">工作项目：</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="dailyTitle" name="dailyTitle" placeholder="请输入项目名称" required="required"/>
+							</div>
+							
+						 </div>
+						<div class="form-group">
+							<label for="dailyContent" class="col-sm-2 control-label">工作内容：</label>
+							<div class="col-sm-8"><textarea name="dailyContent" id="dailyContent" cols="50" rows="4" class="form-control" required="required" placeholder="请输入工作内容及成果"></textarea></div>
+						</div>
+						
+						<div class="form-group">
+							<label for="radio" class="col-sm-2 control-label">工作性质：</label>
+							<div class="col-sm-8">
+								<label class="radio-inline">
+								  <input type="radio" name="dailyCategory" id="dailyCategory1" value="临时" checked>临&nbsp;时
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="dailyCategory" id="dailyCategory2" value="例行">例&nbsp;行
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">工作时长：</label>
+							<div class="col-sm-8">
+								<input type="number" class="form-control" placeholder="请输入工作时长"  id="dailyTime" name="dailyTime"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">日期：</label>
+							<div class="col-sm-8">
+								<input type="date" class="form-control" placeholder="请输入工作时长" name="dailyDate" id="dailyDate" required="required"/>
+							</div>
+						</div>
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-4">
+					      <button type="button" class="btn btn-primary" onclick="addDaily()">提交</button>
+					      <button type="reset" class="btn btn-warning ">重置</button>
+					    </div>
+					  </div>
+					</form>
+			  	
+			  </div>
+			  <div class="col-xs-6 col-md-4"></div>
+			</div>
+			
+		</div>
+		
+		
+		
+		<!--必须先引入jquery,再引入其他的js文件-->
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap3.3.5.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<!--引入bootstrap日期插件-->
+		<script type="text/javascript" src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+	</body>
+</html>
